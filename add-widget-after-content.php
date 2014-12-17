@@ -8,11 +8,11 @@
  * @copyright Copyright (C) 2014 Arelthia Phillips
  *
  * Plugin Name: 		Add Widget After Content
- * Description: 		This plugin adds a widget area after post content. You can also tell it not to display on a specific post. 
- * Plugin URI: 			http://pintopsolutions.com/plugins/add-widget-after-content
+ * Description: 		This plugin adds a widget area after post content before the comments. You can also tell it not to display on a specific post. 
+ * Plugin URI: 			http://www.pintopproductions.com/products/
  * Author: 				Arelthia Phillips
  * Author URI: 			http://www.arelthiaphillips.com
- * Version: 			1.0.1
+ * Version: 			1.0.2
  * License: 			GPL-3.0+
  * License URI:       	http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: 		add-widget-after-content
@@ -51,10 +51,10 @@ if ( !class_exists( 'AddWidgetAfterContent' ) ) {
 		 */
 		function __construct() {
 			add_action( 'init', array( $this, 'load_textdomain' ) );
-			add_action('widgets_init', array( $this,'register_sidebar'));
+			add_action(	'widgets_init', array( $this,'register_sidebar'));
 			add_action( 'add_meta_boxes', array( $this,'after_content_create_metabox') );
 			add_action( 'save_post', array( $this,'after_content_save_meta') );
-			add_filter ('the_content', array( $this,'insert_after_content'));
+			add_filter(	'the_content', array( $this,'insert_after_content'));
 		}
 
 		/**
@@ -72,7 +72,7 @@ if ( !class_exists( 'AddWidgetAfterContent' ) ) {
 		public static function uninstall() {
 		    delete_post_meta_by_key( '_awac_hide_widget' );
 		    unregister_sidebar( 'add-widget-after-content' );
-		    remove_shortcode('psac');
+		    //remove_shortcode('psac');
 		}
 		
 		/**
@@ -83,8 +83,8 @@ if ( !class_exists( 'AddWidgetAfterContent' ) ) {
 			register_sidebar( array(
 	                'id' => 'add-widget-after-content',
 	                'name' => __( 'After Content' ),
-	                'description' => __( 'This widget section shows after the content on single post pages', $this->plugin_slug ),
-	                'before_widget' => '<div id="awac-wrapper"><div id="awac" class="widget %1$s">',
+	                'description' => __( 'This widget section shows after the content, but before comments on single post pages', $this->plugin_slug ),
+	                'before_widget' => '<div class="awac-wrapper"><div class="awac widget %1$s">',
 	                'after_widget' => '</div></div>',
 	                'before_title' => '<h4 class="widget-title">',
 	                'after_title' => '</h4>'
