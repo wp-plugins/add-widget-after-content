@@ -12,7 +12,7 @@
  * Plugin URI: 			https://www.pintopproductions.com/product/add-widget-content/
  * Author: 				Arelthia Phillips
  * Author URI: 			http://www.arelthiaphillips.com
- * Version: 			2.0.0
+ * Version: 			2.0.1
  * License: 			GPL-3.0+
  * License URI:       	http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: 		add-widget-after-content
@@ -43,12 +43,12 @@ if ( !class_exists( 'AddWidgetAfterContent' ) ) {
 		 * The variable name is used as the text domain when internationalizing strings
 		 * of text. 
 		 *
-		 * @since    2.0.0
+		 * @since    2.0.1
 		 *
 		 * @var      string
 		 */
 		protected $plugin_slug = 'add-widget-after-content';	
-		protected $plugin_version = '2.0.0';
+		protected $plugin_version = '2.0.1';
 		protected $settings;
 		/**
 		 * Initialize the plugin 
@@ -86,7 +86,7 @@ if ( !class_exists( 'AddWidgetAfterContent' ) ) {
 		public static function uninstall() {
 		    delete_post_meta_by_key( '_awac_hide_widget' );
 		    unregister_sidebar( 'add-widget-after-content' );
-		    $this->settings->uninstall();
+		    
 		}
 		
 		/**

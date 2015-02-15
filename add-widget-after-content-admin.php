@@ -8,7 +8,7 @@
  * @subpackage  Add Widget After Content Admin
  * @copyright   Copyright (c) 2015, Arelthia Phillips
  * @license     http://opensource.org/licenses/gpl-2.0.php GNU Public License
- * @since       2.0.0
+ * @since       2.0.1
  */
 if ( ! defined( 'WPINC' ) ) {
     die;
@@ -19,16 +19,12 @@ if ( !class_exists( 'AddWidgetAfterContentAdmin' ) ) {
 	class AddWidgetAfterContentAdmin {
 		/**
 		 * The ID of this plugin.
-		 *
-		 * @since    2.0.0
 		 * @access   private
 		 * @var      string    
 		 */
 		private $plugin_name;
 		/**
 		 * The version of this plugin.
-		 *
-		 * @since    2.0.0
 		 * @access   private
 		 * @var      string    
 		 */

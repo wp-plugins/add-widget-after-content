@@ -4,7 +4,7 @@ Donate link: http://PintopSolutions.com/donate
 Tags: posts, widget
 Requires at least: 3.6
 Tested up to: 4.1
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -56,6 +56,9 @@ The settings page is located under the "Appearance" menu. On the settings page y
 3. Remove widget after content for a post.
 
 == ChangeLog ==
+= 2.0.1 =
+*   Fix Uninstall issue
+
 = 2.0.0 =
 *   Add settings page to allow exclusion by post type and post format
 
