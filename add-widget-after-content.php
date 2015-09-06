@@ -4,21 +4,19 @@
  * @package   Add Widget After Content
  * @author    Arelthia Phillips
  * @license   GPL-3.0+
- * @link      https://www.pintopproductions.com/product/add-widget-content/
- * @copyright Copyright (C) 2014 Arelthia Phillips
+ * @link      https://pintopsolutions.com/downloads/add-widget-after-content/
+ * @copyright Copyright (C) 2014-2015 Arelthia Phillips
  *
  * Plugin Name: 		Add Widget After Content
- * Description: 		This plugin adds a widget area after post content before the comments. You can also tell it not to display on a specific post. 
- * Plugin URI: 			https://www.pintopproductions.com/product/add-widget-content/
+ * Description: 		This plugin adds a widget area after post content before the comments. You can also tell it not to display on a specific post or post format. 
+ * Plugin URI: 			https://pintopsolutions.com/downloads/add-widget-after-content/
  * Author: 				Arelthia Phillips
  * Author URI: 			http://www.arelthiaphillips.com
- * Version: 			2.0.3
+ * Version: 			2.0.4
  * License: 			GPL-3.0+
  * License URI:       	http://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: 		add-widget-after-content
  * Domain Path:       	/languages
- * GitHub Plugin URI: 	https://github.com/pintop/add-widget-after-content
- * GitHub Branch:     	master
  */
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
@@ -48,7 +46,7 @@ if ( !class_exists( 'AddWidgetAfterContent' ) ) {
 		 * @var      string
 		 */
 		protected $plugin_slug = 'add-widget-after-content';
-		protected $plugin_version = '2.0.1';
+		protected $plugin_version = '2.0.4';
 		protected $settings;
 		/**
 		 * Initialize the plugin 

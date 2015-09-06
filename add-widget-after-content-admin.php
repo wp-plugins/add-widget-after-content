@@ -85,6 +85,7 @@ if ( !class_exists( 'AddWidgetAfterContentAdmin' ) ) {
 
 					?>
 				</form>
+				
 			</div>
 
 		<?php	
@@ -197,7 +198,7 @@ if ( !class_exists( 'AddWidgetAfterContentAdmin' ) ) {
 
 			if ( $currentScreen->id == 'appearance_page_awac-options' ) {
 				$rate_text = sprintf( __( 'Thank you for using <a href="%1$s" target="_blank">Add Widget After Content</a>! Please <a href="%2$s" target="_blank">rate us</a> on <a href="%2$s" target="_blank">WordPress.org</a>',  $this->plugin_name ),
-					'https://www.pintopproductions.com/product/add-widget-content/',
+					'https://pintopsolutions.com/downloads/add-widget-after-content/',
 					'https://wordpress.org/support/view/plugin-reviews/add-widget-after-content?filter=5#postform'
 				);
 
